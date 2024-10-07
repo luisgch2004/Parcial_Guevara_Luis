@@ -19,9 +19,6 @@ public class Requisitos {
         this.estado = estado;
     }
 
-    Requisitos() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
     
     public boolean habilitar(){
         this.estado = true;

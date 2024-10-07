@@ -28,9 +28,9 @@ public class Oferta {
         this.fechaFinal = fechaFinal;
     }
     
-    public boolean agregarRequisito(int orden, String descripcion){
-        boolean result = false;{
-            this.requisito= new Requisitos (orden,descripcion);
+    public boolean agregarRequisito(int orden, String descripcion, boolean estado){
+        boolean result = true;{
+            this.requisito= new Requisitos (orden, descripcion, estado);
         return result;
     }
     
