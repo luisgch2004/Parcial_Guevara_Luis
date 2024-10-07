@@ -8,6 +8,6 @@ package Modelo;
  *
  * @author Luis
  */
-public class Candidato {
+public class EstadoEtapa {
     
 }
