@@ -11,7 +11,15 @@ package Modelo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArregloEstadoEtapa {
-    private int indice;
-    
+public class ArregloEstadoEtapa{
+    private List<EstadoEtapa> estadosEtapa;
+
+    public ArregloEstadoEtapa() {
+        estadosEtapa = new ArrayList<>();
     }
+
+    public boolean agregar(EstadoEtapa estado) {
+        return estadosEtapa.add(estado);
+    }
+
+}

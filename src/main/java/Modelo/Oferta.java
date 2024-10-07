@@ -28,11 +28,61 @@ public class Oferta {
         this.requisito = new ArrayList<Requisitos>();
     }
     
+    public ArrayList<Requisitos> getRequisitos(){
+        return requisito;
+    }
     public boolean agregarRequisito(int orden, String descripcion, boolean estado){
-        boolean result = true;{
-            this.requisito.add(new Requisitos (orden, descripcion, estado));
-        return result;
+        {
+            return this.requisito.add(new Requisitos (orden, descripcion, estado));
         }  
+    }
+
+    public String getPuesto() {
+        return puesto;
+    }
+
+    public void setPuesto(String puesto) {
+        this.puesto = puesto;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public String getArea() {
+        return area;
+    }
+
+    public void setArea(String area) {
+        this.area = area;
+    }
+
+    public Date getFechaInicio() {
+        return fechaInicio;
+    }
+
+    public void setFechaInicio(Date fechaInicio) {
+        this.fechaInicio = fechaInicio;
+    }
+
+    public Date getFechaFinal() {
+        return fechaFinal;
+    }
+
+    public void setFechaFinal(Date fechaFinal) {
+        this.fechaFinal = fechaFinal;
+    }
+
+    public ArrayList<Requisitos> getRequisito() {
+        return requisito;
+    }
+
+    public void setRequisito(ArrayList<Requisitos> requisito) {
+        this.requisito = requisito;
     }
     
     }
