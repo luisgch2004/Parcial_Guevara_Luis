@@ -17,8 +17,7 @@ public class Oferta {
     private String area;
     private Date fechaInicio;
     private Date fechaFinal;
-    private int nrequisito;
-    private Requisitos requisito;
+    private ArrayList<Requisitos> requisito;
 
     public Oferta(String puesto, String descripcion, String area, Date fechaInicio, Date fechaFinal) {
         this.puesto = puesto;
@@ -26,18 +25,15 @@ public class Oferta {
         this.area = area;
         this.fechaInicio = fechaInicio;
         this.fechaFinal = fechaFinal;
+        this.requisito = new ArrayList<Requisitos>();
     }
     
     public boolean agregarRequisito(int orden, String descripcion, boolean estado){
         boolean result = true;{
-            this.requisito= new Requisitos (orden, descripcion, estado);
+            this.requisito.add(new Requisitos (orden, descripcion, estado));
         return result;
+        }  
     }
     
-    public boolean eliminarRequisitos(int orden){
-        
-    }
-        
     }
     
-}

@@ -10,18 +10,24 @@ import java.util.Date;
  *
  * @author Luis
  */
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
 public class Postulacion {
     private Date fecha;
     private String glosa;
     private boolean anulada;
     private Date fechaAnulacion;
     private Oferta oferta;
+    private List<Etapa> etapas;
 
     public Postulacion(Date fecha, String glosa, Oferta oferta) {
         this.fecha = fecha;
         this.glosa = glosa;
         this.oferta = oferta;
         this.anulada = false;
+        this.etapas = new ArrayList<>();
     }
 
     public void anular() {
@@ -29,7 +35,17 @@ public class Postulacion {
         this.fechaAnulacion = new Date();
     }
 
-    public boolean isActiva() {
+    public boolean Activo() {
         return !anulada;
     }
+
+    public void agregarEtapa(Etapa etapa) {
+        etapas.add(etapa);
+    }
+
+    public List<Etapa> getEtapas() {
+        return etapas;
+    }
+
 }
+

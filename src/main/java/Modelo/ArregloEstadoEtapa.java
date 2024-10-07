@@ -8,6 +8,10 @@ package Modelo;
  *
  * @author Luis
  */
+import java.util.ArrayList;
+import java.util.List;
+
 public class ArregloEstadoEtapa {
+    private int indice;
     
-}
+    }

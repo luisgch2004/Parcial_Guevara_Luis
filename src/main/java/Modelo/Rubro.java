@@ -8,11 +8,11 @@ package Modelo;
  *
  * @author Luis
  */
-public class EstadoEtapa {
+public class Rubro {
     private String nombre;
     private boolean estado;
 
-    public EstadoEtapa(String nombre) {
+    public Rubro(String nombre) {
         this.nombre = nombre;
         this.estado = true;
     }
@@ -40,5 +40,7 @@ public class EstadoEtapa {
     public void setEstado(boolean estado) {
         this.estado = estado;
     }
+    
 
 }
+
