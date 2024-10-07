@@ -9,5 +9,22 @@ package Modelo;
  * @author Luis
  */
 public class Requisitos {
+    private int orden;
+    private String descripcion;
+    private boolean estado;
+
+    public Requisitos(int orden, String descripcion, boolean estado) {
+        this.orden = orden;
+        this.descripcion = descripcion;
+        this.estado = estado;
+    }
     
+    public boolean habilitar(){
+        this.estado = true;
+        return this.estado;
+    }
+    public boolean deshabilitar(){
+        this.estado = false;
+        return this.estado;
+    }
 }
